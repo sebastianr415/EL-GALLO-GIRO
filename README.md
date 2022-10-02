@@ -1,5 +1,3 @@
-# Wus poppin'
+# EL GALLO GIRO'
 
-### This project will provide weekday or weekend activites for family friends or for yourself :joy:
-
-![farmers market](./IMG/pexels-mark-dalton-439818.jpg)
+### This project will provide information about el gallo giro food truck. from store hours to their history:joy:
