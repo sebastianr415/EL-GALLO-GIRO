@@ -1,22 +1,25 @@
 .bdy{
     background-color:#276FBF;
+    overflow-x: hidden;
 }
 nav{
     padding:10px;
-    display: flex;
-    flex-flow: row wrap;
-    /* specifies flex direction and wrap */
-    justify-content: flex-end;
-    /* text-decoration: none; */
     text-transform: uppercase;
     letter-spacing: 5px;
 }
 .nav-btn{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: flex-end;
+    align-content:flex-end;
+}
+
+/* .nav-btn{
     margin:25px;
     padding-left:100px;
     text-decoration:none;
     color:white;
-}
+} */
 .hero-img{
     /* background-image: url(/IMG/close-up-cabeza-pic.jpeg);
     background-repeat:no-repeat;
@@ -90,4 +93,31 @@ nav{
     background-repeat:no-repeat;
     Width:1990px;
     height:791px;
+}
+
+.story-sec{
+    display:flex;
+    border:1px solid red;
+    flex-flow:row wrap;
+    justify-content: flex-end;
+    align-content:flex-start
+}
+.story-sec2{
+    border:1px solid goldenrod;
+    text-align: center;
+    /* margin-right:30px;
+    padding-right:100px;
+    padding-top:100px; */
+    padding-left:80px;
+    margin:50px;
+    color:white;
+    text-transform: uppercase;
+}
+.story-p{
+text-transform: lowercase;
+}
+.story-img{
+    margin:5px;
+    width:370px;
+    height:387px;
 }
