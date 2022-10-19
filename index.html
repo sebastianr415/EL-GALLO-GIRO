@@ -21,13 +21,26 @@
   <body class="bdy">
     <!-- nav bar -->
 <nav>
-  <a><i class="fa-duotone fa-burrito"></i></a>
-  <a href="index.html" class="nav-btn">welcome</a>
-  <a href="food.html" class="nav-btn">food</a>
-  <a href="about.html" class="nav-btn">about</a>
-  <a href="visit.html" class="nav-btn">visit us</a>
-</nav>
+  <button class="my-button" id="my-button">
+    <i class="fas fa-bars"></i>
+  </button>
 
+<ul id="mynav">
+  <li><a href="index.html">home</a></li>
+  <li><a href="food.html">food</a></li>
+  <li><a href="about.html">about</a></li>
+  <li><a href="visit.html">visit us</a></li>
+</ul>
+</nav>
+<script>
+  const button = documnent.getElementById('my-button');
+  const nav = documnent.getElementById('mynav');
+
+  button.addEventListener('click', () => {
+    nav.classlist.toggle('show');
+  });
+  
+</script>
 <!-- hero image -->
     <div class="hero-img">
         <div class="wlcme">
