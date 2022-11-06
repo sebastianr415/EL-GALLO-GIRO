@@ -1,223 +1,133 @@
 body{
-    margin:0;
+    position:relative;
+    height:1000vh;
     background-color: #276FBF !important;
 }
 
 *{
     font-family: 'Lato', sans-serif;
+    /* removing default padding and margin */
     margin:0;
     padding:0;
     /* box-sizing: border-box; */
 }
-/* new hambuger menu */
-/* ul{
-    list-style-type: none;
+header{
+position:fixed;
+top:0;
+width:100%;
+background-color:#FF8008;
 }
-
+li{
+    list-style: none;
+}
 a{
-    color:#000000;
-    text-decoration:none;
+    color:#ffffff;
+    text-decoration: none;
 }
-
 .container{
-    width:90%;
+    width:1600px;
     margin:auto;
 }
-.menu-btn{
-    position:absolute;
-    top:5px;
-    right:25px;
-    font-size: 40px;
-    font-weight:bold;
-    display: none;
+.subcontainer{
+    width: 85%;
+    margin: auto; 
 }
-
-.fa-burrito{
-    color:#ffffff;
-} */
-.my-button {
-    background-color: transparent;
-    border: 10px;
-    color: black;
-    cursor: pointer;
-    font-size: 30px;
-    margin-left: 32px;
-    float: left;
-    line-height: 70px;
-    display: none;
-  }
-  
-  .my-button:focus {
-    outline: none;
-  }
-  
-  nav {
-      background-color: grey;
-      flex-wrap: wrap;
-  }
-  
-  nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none
-  }
-  
-  nav ul li {
-      padding: 20px 20px;
-  }
-  
-  nav ul li a {
-      color: white;
-      text-decoration: none;
-  }
-  
-  nav ul li:hover {
-      text-decoration: underline;
-      text-decoration-color: red;
-  }
-  
-  
-  @media (max-width: 800px) {
-    nav ul {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-    }
-    
-    nav ul.show {
-      display: flex;
-    }
-    
-    .my-button {
-      display: block;
-    }
-  }
-  
-  @media (max-width: 600px) {
-      nav ul {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-    }
-    
-    nav ul.show {
-      display: flex;
-    }
-    
-    .my-button {
-      display: block;
-    }
-      nav {
-          background-color: rgb(62, 109, 149);
-      }
-  }
-/* nav bar starts */
-.my-button {
-    background-color: transparent;
-    border: 10px;
-    color: black;
-    cursor: pointer;
-    font-size: 30px;
-    margin-left: 32px;
-    float: left;
-    line-height: 70px;
-    display: none;
+.navbar{
+    width:100%;
+    min-height: 70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center; 
 }
-
-.my-button:focus {
-    outline: none;
+.nav-menu{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap: 60px;
 }
-/* when user clicks on my-button no outline */
-
-nav {
-    background-color: #276FBF;
-    flex-wrap: wrap;
+.nav-branding{
+font-size: 2rem;
 }
-
-
-nav ul {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none
+.hamburger{
+display:none;
+cursor:pointer;
 }
-
-nav ul li {
-    padding: 20px 60px;
+.bar{
+    display:block;
+    width:25px;
+    height:3px;
+    margin:5px 0;
+    transition: all 0.3s ease;
+    background-color:#000000;
 }
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size:20px;
+#home{
+margin-top:70px;
+border: 5px solid red;
+height:100vh;
 }
-nav ul li:hover {
-    text-decoration: underline;
-}
-@media (max-width: 800px) {
-nav ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-}
-}
-nav ul.show {
-display: flex;
-}
-
-.my-button {
-    display: block;
-}
-.fas{
-
-    z-index:99;
-    color:white;
-}
-nav{
-    background-color: #276FBF;
-}
-
-@media (max-width: 600px) {
-    nav ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
+@media(max-width:1600px){
+.container{
+width:100%;
 }
 }
 
-nav ul.show {
-    display: flex;
+@media(max-width:1024px){
+.hamburger{
+display:block;
+}
+.hamburger.active .bar:nth-child(2){
+opacity: 0;
 }
 
-.my-button {
-    display: block;
+.hamburger.active .bar:nth-child(1){
+transform: translateY(8px) rotate(45deg);
 }
 
-nav {
-background-color: rgb(62, 109, 149);
-z-index: -1;
+.hamburger.active .bar:nth-child(3){
+transform: translateY(-8px) rotate(-45deg);
+}
+.nav-menu{
+position:fixed;
+/* left:-100%; */
+top:-100px;
+gap: 0px;
+display:flex;
+flex-direction:column;
+background-color:#FF8008;
+width:100%;
+text-align:center;
+transition:0.3s;
 }
 
-.hero-img{
+.nav-item{
+margin:16px 0;
+}
+.nav-menu.active{
+/* left: 0; */
+top:70px;
+}
+}
+/* .hero-img{
     background-image: url(/IMG/close-up-cabeza-pic.jpeg);
     background-repeat:no-repeat;
     background-size:cover;
     position: relative;
     max-width:100%;
-    height:791px;
+    height:790px;
     opacity: 80%;
 
-}
-.hero-img::before {
+} */
+/* .hero-img::before {
     content:"";
     background-image: url(/IMG/close-up-cabeza-pic.jpeg);
     background-size:cover;
     position:absolute;
-    top: 0px;
+    top: 0;
     right: 0px;
     bottom: 0px;
     left: 0px;
     opacity: 0.75;
-}
+} */
 .wlcme{
     position:relative;
     display:flex;
@@ -391,12 +301,12 @@ button{
     
 } */
 
-.hero-img-2{
+/* .hero-img-2{
     position: relative;
     max-width:100%;
     height:791px;
-}
-.hero-img-2::before {
+} */
+/* .hero-img-2::before {
     content:"";
     background-image: url(/IMG/front-truck-pic.jpeg);
     background-size:cover;
@@ -406,7 +316,7 @@ button{
     bottom: 0px;
     left: 0px;
     opacity: 0.70;
-}
+} */
 .hero-p-2{
     position:relative;
     color:#ffffff;
@@ -496,7 +406,7 @@ footer{
 /* media query for mobile */
 @media (max-width: 42rem){
 
-.hero-img{
+/* .hero-img{
     background-image: url(/IMG/close-up-cabeza-pic.jpeg);
     background-repeat:no-repeat;
     background-size:cover;
@@ -504,8 +414,9 @@ footer{
     max-width:100%;
     height:350px;
     opacity: 80%;
-}
-.hero-img::before {
+    padding-top:20px;
+} */
+/* .hero-img::before {
     content:"";
     background-image: url(/IMG/close-up-cabeza-pic.jpeg);
     background-size:cover;
@@ -515,7 +426,7 @@ footer{
     bottom: 0px;
     left: 0px;
     opacity: 0.75;
-    }
+    } */
 
 .wlcme{
     position:relative;
@@ -612,7 +523,7 @@ footer{
 /* end media query 42rem */
 
 @media (max-width:62rem){
-    .hero-img{
+    /* .hero-img{
     background-image: url(/IMG/close-up-cabeza-pic.jpeg);
     background-repeat:no-repeat;
     background-size:cover;
@@ -620,8 +531,8 @@ footer{
     max-width:100%;
     height:350px;
     opacity: 80%;
-    }
-.hero-img::before {
+    } */
+/* .hero-img::before {
     content:"";
     background-image: url(/IMG/close-up-cabeza-pic.jpeg);
     background-size:cover;
@@ -631,7 +542,7 @@ footer{
     bottom: 0px;
     left: 0px;
     opacity: 0.75;
-}
+} */
 .wlcme{
     position:relative;
     display:flex;
