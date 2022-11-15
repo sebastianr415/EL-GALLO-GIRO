@@ -595,3 +595,97 @@ a.footer-social:hover{
 /* } */
 
 /* END OF MEDIA QUERY */
+
+/* ABOUT PAGE CSS */
+
+
+/***** add slideshow to hero about page *****/
+.hero-title-about{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kaushan Script', cursive ;
+    font-weight: bolder;
+    font-size: 100px;
+    letter-spacing: 10px;
+    color:#ffffff;
+    text-shadow: 4px 2px 0 #FF8008; 
+    height:100%;
+    
+}
+.about-sec2{
+    height:500px;
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:center;
+    align-items:center;
+
+}
+.about-title{
+    padding:25px 0px;
+    font-family:'Kaushan Script', cursive ;
+    text-decoration-style: double;
+    font-size:54px;
+    text-transform: capitalize;
+    color:#ffffff;
+
+}
+.about-story{
+    color:#ffffff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    padding:50px 100px;
+    letter-spacing: 5px;
+    font-size:15px;
+    line-height: 30px;
+}
+/* footer */
+.footer1-about{
+    position:sticky;
+    bottom:0;
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        text-align: center; 
+        padding:25px 0px;
+        border:1px solid #FF8008;
+        background-color: #FF8008;
+    }
+    .fa-instagram{
+        color:#ffffff;
+        font-size:30px;
+        text-decoration: none;
+    }
+    .fa-facebook{
+        color:#ffffff;
+        font-size:30px;
+        text-decoration: none;
+    }
+    .top-page{
+        color:#ffffff;
+        text-decoration:none;
+        text-transform: uppercase;
+        border:2px solid white;
+        height:20px;
+    }
+    .top-page:hover{
+        border:2px solid #71816D;
+    }
+    a.fa-instagram:hover{
+        color:#71816D;
+    }
+    a.fa-facebook:hover{
+        color:#71816D;
+    }
+    .footer-social{
+        color:#ffffff;
+        text-decoration:none;
+        text-transform: uppercase;
+    }
+    a.footer-social:hover{
+        color:#71816D;
+        cursor:pointer;
+    }
