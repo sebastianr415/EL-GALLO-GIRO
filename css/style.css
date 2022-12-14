@@ -63,7 +63,7 @@ background-color: var(--hover-color);
     justify-content: space-between;
     width:30px;
     height:21px;
-
+    padding:1px 0;
 }
 .toggle-button .bar{
 height:3px;
@@ -106,21 +106,7 @@ padding:.5rem 1rem;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)),url(/IMG/close-up-cabeza-pic.jpeg) no-repeat center center fixed;
     background-size:cover;
     width:100%;
-    /* height:100%; */
-}
-
-.wlcme-style{
-    text-align:center;
-    font-size:16vw;
-    font-family: 'lato ' sans-serif;
-    color:var(--text-color);
-    display:flex;
-    flex-flow:column wrap;
-    justify-content:center;
-    align-content: center;
-    font-weight:bold;
-    padding:2rem 0;
-    margin:0;
+    /* height:50vh; */
 }
 .wlcme-style{
     text-align:center;
@@ -161,11 +147,11 @@ padding:.5rem 1rem;
     flex-flow:column nowrap;
     text-align: center;
     color:var(--text-color);
-    text-transform: uppercase;
     padding:25px;
 
 }
 .story-style{
+    font-size:10vw;
     padding:0;
     margin:0;
     font-family: 'Kaushan Script', cursive;
@@ -245,22 +231,6 @@ padding:.5rem 1rem;
     border:4px solid var(--text-color);
 }
 
-.button-p2{
-    background-color:var(--main-bg-color);
-    color:var(--text-color);
-    width:200px;
-    height:60px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-transform:uppercase;
-    text-align: center;
-    padding:10px 0px;
-    letter-spacing: 3px;
-    text-decoration: none;
-    border-radius: 5%;
-}
-
 /**** loaction Section ****/
 .hero-img-2{
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)),url(/IMG/front-truck-pic.jpeg) no-repeat center center fixed;
@@ -268,7 +238,7 @@ padding:.5rem 1rem;
     width:100%;
     color:var(--text-color);
     font-family: 'Kaushan Script', cursive;
-    text-shadow: 4px 7px 0 var(--txt-shadow);
+    text-shadow: 4px 7px 0 var(--hover-color);
     /* border:1px red solid; */
     display:flex;
     justify-content: center;
@@ -286,6 +256,7 @@ padding:.5rem 1rem;
     color:var(--text-color);
     padding:50px;
     justify-content:flex-start;
+    font-size:5vw;
 }
 .info-p{
     /* border:1px solid red; */
@@ -350,7 +321,6 @@ icon-bar a{
     color:var(--text-color);
     text-decoration:none;
     text-transform: uppercase;
-    border:2px solid var(--text-color);
     height:20px;
 }
 .top-page:hover{
@@ -484,12 +454,13 @@ a.footer-social:hover{
     letter-spacing:10px;
     height:350px;
 } */
-/* .hero-img{
-    position: relative;
-    max-width:100%;
-    height:350px;
-    opacity: 80%;
+/* .hero-img-about{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)),url(/IMG/close-up-cabeza-pic.jpeg) no-repeat center center fixed;
+    background-size:cover;
+    width:100%;
+    height:50vh;
 }
+  
 .hero-title-about{
     display:flex;
     flex-flow: row wrap;
@@ -500,10 +471,11 @@ a.footer-social:hover{
     font-size: 100px;
     letter-spacing: 10px;
     color:#ffffff;
-    text-shadow: 4px 2px 0 #FF8008; 
+    text-shadow: 4px 2px 0 #000000; 
     height:100%;
     
-}
+} */
+/*  
 .about-sec2{
     height:100%;
     display:flex;
@@ -607,29 +579,30 @@ a.footer-social:hover{
 
 
 /***** add slideshow to hero about page *****/
-.hero-title-about{
+.hero-img-about{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)),url(/IMG/close-up-cabeza-pic.jpeg) no-repeat center center fixed;
+    background-size:cover;
+    width:100%;
+    height:60vh;
+    font-size:16vw;
     display:flex;
-    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    font-family: 'Kaushan Script', cursive ;
-    font-weight: bolder;
-    font-size: 100px;
-    letter-spacing: 10px;
-    color:#ffffff;
-    text-shadow: 4px 2px 0 #FF8008; 
-    height:100%;
-    
+    color:var(--text-color);
+    font-weight:bold;
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 4px 7px 0 var(--txt-shadow);
 }
-.about-sec2{
-    height:500px;
-    display:flex;
-    flex-flow:column wrap;
-    justify-content:center;
-    align-items:center;
+
+.about-sec{
+    text-align: center;
+    font-size:16vw;
+    color:var(--text-color);
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 4px 7px 0 var(--txt-shadow);
 
 }
-.about-title{
+/* .about-title{
     padding:25px 0px;
     font-family:'Kaushan Script', cursive ;
     text-decoration-style: double;
@@ -637,62 +610,66 @@ a.footer-social:hover{
     text-transform: capitalize;
     color:#ffffff;
 
-}
+}  */
 .about-story{
+    padding:20px 5px;
+    margin:0;
     color:#ffffff;
-    display:flex;
+    /* display:flex;
     justify-content:center;
-    align-items:center;
+    align-items:center; */
     text-align: center;
-    padding:50px 100px;
+    /* padding:50px 100px; */
     letter-spacing: 5px;
-    font-size:15px;
-    line-height: 30px;
+    font-size:4vw;
+    /* line-height: 30px; */
 }
 /* footer */
-.footer1-about{
-    position:sticky;
-    bottom:0;
-        display:flex;
-        justify-content:space-around;
-        align-items:center;
-        text-align: center; 
-        padding:25px 0px;
-        border:1px solid #FF8008;
-        background-color: #FF8008;
-    }
-    .fa-instagram{
-        color:#ffffff;
-        font-size:30px;
-        text-decoration: none;
-    }
-    .fa-facebook{
-        color:#ffffff;
-        font-size:30px;
-        text-decoration: none;
-    }
-    .top-page{
-        color:#ffffff;
-        text-decoration:none;
-        text-transform: uppercase;
-        border:2px solid white;
-        height:20px;
-    }
-    .top-page:hover{
-        border:2px solid #71816D;
-    }
-    a.fa-instagram:hover{
-        color:#71816D;
-    }
-    a.fa-facebook:hover{
-        color:#71816D;
-    }
-    .footer-social{
-        color:#ffffff;
-        text-decoration:none;
-        text-transform: uppercase;
-    }
-    a.footer-social:hover{
-        color:#71816D;
-        cursor:pointer;
-    }
+.footer1{
+position:sticky;
+bottom:0;
+padding:25px 0px;
+border:1px solid #FF8008;
+background-color: #FF8008;
+display: flex;
+flex-flow:column nowrap;
+justify-content: center;
+}
+
+.footer-icons  {
+display:flex;
+flex-flow:row nowrap;
+justify-content: center;
+gap:20px;
+color:#ffffff;
+}
+.fa-brands {
+color:var(--text-color);
+text-decoration:none;
+font-size:16px;
+}
+
+.top-page{
+display:flex;
+justify-content: center;
+color:#ffffff;
+text-decoration:none;
+text-transform: uppercase;
+font-size:16px;
+}
+
+/* a.fa-brands:hover{
+color:#71816D;
+} */
+.footer-social a{
+display:block;
+text-align: center;
+padding:10px 0;
+color:#ffffff;
+text-decoration:none;
+text-transform: uppercase;
+}
+/* .footer-social:hover{
+color:#71816D;
+cursor:pointer;
+}  */
