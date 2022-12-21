@@ -12,10 +12,8 @@ html,body{
 }
 *{
     box-sizing:border-box;
-}
-body{
-    margin:0;
     padding:0;
+    margin:0;
 }
 
 
@@ -26,8 +24,8 @@ body{
     align-items:center;
     background-color: var(--main-bg-color);
     color:var(--text-color);
-    position:fixed;
     top:0;
+    position:fixed;
     width:100%;
 }
 .nav-title{
@@ -342,7 +340,28 @@ a.footer-social:hover{
     cursor:pointer;
 }
 /* media query  for 688px or more*/
-/* @media (min-width:43rem){
+@media (min-width:43em){
+.row{
+    display:flex;
+    flex-wrap: row wrap;
+        padding: 50px 70px;
+        /* border:2px solid goldenrod; */
+    }
+    .column{
+        flex:50%;
+        padding:5px 0px;
+        /* border:2px solid purple; */
+    }
+    .column img{
+        margin-top:20px;
+        display:flex;
+        justify-content: center;
+        padding:0px 10px;
+        vertical-align: sub;
+        width:100%;
+    }
+}
+/* @media (min-width:43em){
     html,body{
         margin:0;
         padding:0;
