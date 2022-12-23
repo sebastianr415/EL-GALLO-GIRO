@@ -1,22 +1,3 @@
-
-:root{
-    --main-bg-color:#276FBF;
-    --text-color:#ffffff;
-    --hover-color:#FF8008;
-    --txt-shadow:#000000;
-}
-html,body{
-    background-color: var(--main-bg-color) !important;
-    overflow-x: hidden;
-    font-family: 'Lato', sans-serif;
-}
-*{
-    box-sizing:border-box;
-    padding:0;
-    margin:0;
-}
-
-
 /******** hamburger menu start here ***********/
 .navbar{
     display:flex;
