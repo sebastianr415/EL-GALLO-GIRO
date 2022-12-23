@@ -1,0 +1,23 @@
+:root {
+    --main-bg-color: #276fbf;
+    --text-color: #fff;
+    --hover-color: #ff8008;
+    --txt-shadow: #000;
+  }
+  
+  html,
+  body {
+    background-color: var(--main-bg-color) !important;
+    overflow-x: hidden;
+    font-family: Lato, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
