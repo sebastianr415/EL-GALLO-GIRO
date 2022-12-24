@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
-      "lint": "npx stylelint css/**.css --fix"
+      "lint": "npx stylelint css/**.css --fix",
+      "prettier-format": "prettier --config .prettierrc 'css/**.css' --write"
     },
     "repository": {
       "type": "git",
