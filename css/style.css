@@ -360,16 +360,17 @@ a.footer-social:hover {
   color: var(--hover-color);
   cursor: pointer;
 }
-  .footer1 {
-    position: sticky;
-    bottom: 0;
-    padding: 25px 0;
-    border: 1px solid #ff8008;
-    background-color: #ff8008;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-  }
+
+.footer1 {
+  position: sticky;
+  bottom: 0;
+  padding: 25px 0;
+  border: 1px solid #ff8008;
+  background-color: #ff8008;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
 
   .footer-icons {
     display: flex;
@@ -402,8 +403,6 @@ a.footer-social:hover {
     text-decoration: none;
     text-transform: uppercase;
   }
-}
-
 /* media query  for 688px or more */
 @media (min-width: 43em) {
   .column {
