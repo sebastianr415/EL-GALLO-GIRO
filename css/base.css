@@ -10,6 +10,7 @@ body {
   background-color: var(--main-bg-color) !important;
   overflow-x: hidden;
   font-family: Lato, sans-serif;
+  color: var(--text-color);
 }
 
 * {
