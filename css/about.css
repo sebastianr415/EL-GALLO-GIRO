@@ -124,3 +124,7 @@
   text-align: center;
   letter-spacing: 3px;
 }
+
+.info-title {
+  text-shadow: 4px 7px 0 #000;
+}
