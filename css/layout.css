@@ -1,0 +1,21 @@
+/* grid image css */
+
+/* .row {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapped-row {
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 25%;
+  padding: 25%;
+  padding: 0 4px;
+
+} */
+
+img {
+  width: 100%;
+}

@@ -1,34 +1,42 @@
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+var slides = document.querySelectorAll(".slide");
+var dots = document.querySelectorAll(".dot");
+var index = 0;
 
-toggleButton.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active')
-})
 
-let elements = document.getElementsByClassName('column');
-let i ;
-
-function two (){
-    for ( i = 0; i < elements.length; i++){
-        elements[i].getElementsByClassName.flex ='50%'
-    }
+function prevSlide(n){
+  index+=n;
+  console.log("prevSlide is called");
+  changeSlide();
 }
-var textWrapper = documnet.querySelector('wlcme-style','wlcme-style-2');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({loop: true})
-.add({
-    targets: '.ml2 .letter',
-    scale: [4,1],
-    opacity: [0,1],
-    translateZ: 0,
-    easing: "easeOutExpo",
-    duration: 950,
-    delay: (el, i) => 70*i
-}).add({
-    targets: '.ml2',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-});
+function nextSlide(n){
+  index+=n;
+  changeSlide();
+}
+
+changeSlide();
+
+function changeSlide(){
+
+  if(index>slides.length-1)
+    index=0;
+
+  if(index<0)
+    index=slides.length-1;
+
+
+
+    for(let i=0;i<slides.length;i++){
+      slides[i].style.display = "none";
+
+    //   dots[i].classList.remove("active");
+
+
+    }
+
+   slides[index].style.display = "block";
+    dots[index].classList.add("active");
+
+
+
+}

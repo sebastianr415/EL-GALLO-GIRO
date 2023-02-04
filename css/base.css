@@ -3,6 +3,23 @@
   --text-color: #fff;
   --hover-color: #ff8008;
   --txt-shadow: #000;
+
+  /* Type System */
+  --type-xl: 3.052rem;
+  --type-lg: 1.563rem;
+  --type-md: 1rem;
+
+  /* Spacing System */
+  --space-xl: 20px;
+  --space-lg: 10px;
+  --space-md: 8px;
+  --space-sm: 4px;
+
+  /* font-weight */
+  --fw-bolder: 900;
+  --fw-bold: 700;
+  --fw-normal: 400;
+  --fw-lighter: 300;
 }
 
 html,
@@ -15,6 +32,8 @@ body {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
