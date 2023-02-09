@@ -5,9 +5,11 @@
   --txt-shadow: #000;
 
   /* Type System */
-  --type-xl: 3.052rem;
-  --type-lg: 1.563rem;
-  --type-md: 1rem;
+  --type-xl: 3.052rem; /* 48px */
+  --type-lg: 1.953rem; /* 30px */
+  --type-md: 1.563rem; /* 20px */
+  --type-ms: 1.15rem; /* 18px */
+  --type-sm: 1rem; /* 16px */
 
   /* Spacing System */
   --space-xl: 20px;

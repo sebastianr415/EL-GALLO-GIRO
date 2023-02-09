@@ -29,7 +29,7 @@ function changeSlide(){
     for(let i=0;i<slides.length;i++){
       slides[i].style.display = "none";
 
-    //   dots[i].classList.remove("active");
+      dots[i].classList.remove("active");
 
 
     }

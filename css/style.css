@@ -115,6 +115,10 @@
   padding-top: 50px;
 }
 
+.story {
+  padding: 20px 30px;
+}
+
 .article-1 {
   padding: 20px;
 }
@@ -122,14 +126,11 @@
 /* image carousel */
 .slide img {
   width: 100%;
+  padding: 20px;
 }
 
 #slider {
   width: 100%;
-  margin: 0 auto;
-
-  /* margin-top: 10px; */
-  border: 1px solid red;
 
   /* max-width: 600px; */
   position: relative;
@@ -145,7 +146,7 @@
 /* controls */
 .controls {
   position: absolute;
-  top: 110%;
+  top: 105%;
   transform: translateY(-50%);
   font-size: 1.5em;
   padding: 15px 10px;
@@ -170,6 +171,17 @@
   right: 10px;
 }
 
+#dots-con {
+  text-align: center;
+}
+
+/* .dot{
+display:inline-block;
+background:grey;
+padding:8px;
+border-radius:50%;
+margin:10px 5px;
+} */
 @keyframes fade {
   from {
     opacity: 0.5;
@@ -234,7 +246,7 @@ a.button-p:hover {
 
 .info-section {
   padding: 20px;
-  line-height: 30px;
+  line-height: 60px;
 }
 
 .info-title {
@@ -303,7 +315,7 @@ a.footer-social:hover {
   border: 1px solid #ff8008;
   background-color: #ff8008;
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -318,12 +330,16 @@ a.footer-social:hover {
 }
 
 @media (min-width: 43em) {
+  /* .subheading-text {
+    font-size: var(--type-xl);
+  } */
+
   #slider {
     width: 100%;
   }
 
   .controls {
-    top: 100%;
+    top: 120%;
   }
 
   .hero-img,
@@ -343,14 +359,32 @@ a.footer-social:hover {
     width: 50%;
   }
 
-  .box-title {
+  /* .box-title {
     font-size: 40px;
-  }
+  } */
 
   #bottom,
   .info-addy,
   .info-sec {
     font-size: 31px;
+  }
+
+  .footer1 {
+    position: sticky;
+    bottom: 0;
+    padding: 30px 0;
+    border: 1px solid #ff8008;
+    background-color: #ff8008;
+    display: flex;
+    justify-content: center;
+    line-height: var(--space-xl);
+  }
+
+  .footer-social a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--text-color);
   }
 }
 
@@ -358,9 +392,21 @@ a.footer-social:hover {
 
 /* 992px breakpoint */
 @media (min-width: 62em) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
+  .slide img {
+    height: 90%;
+    padding: 50px;
+  }
+
+  .controls {
+    top: 160%;
+  }
+
+  #left-arrow {
+    left: 40px;
+  }
+
+  #right-arrow {
+    right: 40px;
   }
 
   /* footer */
@@ -372,7 +418,7 @@ a.footer-social:hover {
     border: 1px solid #ff8008;
     background-color: #ff8008;
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
     justify-content: center;
   }
 
