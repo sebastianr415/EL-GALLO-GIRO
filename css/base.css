@@ -1,5 +1,5 @@
 :root {
-  --main-bg-color: #276fbf;
+  --bg-color: #276fbf;
   --text-color: #fff;
   --hover-color: #ff8008;
   --txt-shadow: #000;
@@ -26,7 +26,7 @@
 
 html,
 body {
-  background-color: var(--main-bg-color) !important;
+  background-color: var(--bg-color) !important;
   overflow-x: hidden;
   font-family: Lato, sans-serif;
   color: var(--text-color);
@@ -41,4 +41,12 @@ body {
 body {
   margin: 0;
   padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
