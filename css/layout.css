@@ -1,3 +1,43 @@
 img {
   width: 100%;
 }
+
+/* image carousel */
+.slide img {
+  width: 100%;
+  padding: 20px;
+}
+
+#slider {
+  width: 100%;
+
+  /* max-width: 600px; */
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+/**** Map styles *****/
+.map-responsive {
+  margin: 40px;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  position: relative;
+  z-index: 0;
+}
+
+.map-responsive iframe,
+.map-responsive object,
+.map-responsive embed {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
