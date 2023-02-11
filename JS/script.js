@@ -1,61 +1,50 @@
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+const hamburger = document.querySelector(".hamburger")
+const navMenu = document.querySelector(".nav-menu")
 
-hamburger.addEventListener("click", mobileMenu);
+hamburger.addEventListener("click", mobileMenu)
 
 function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
+  hamburger.classList.toggle("active")
+  navMenu.classList.toggle("active")
 }
 
-const navLink = document.querySelectorAll(".nav-link");
+const navLink = document.querySelectorAll(".nav-link")
 
-navLink.forEach(n => n.addEventListener("click", closeMenu));
+navLink.forEach((n) => n.addEventListener("click", closeMenu))
 
 function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
+  hamburger.classList.remove("active")
+  navMenu.classList.remove("active")
 }
 
-var slides = document.querySelectorAll(".slide");
-var dots = document.querySelectorAll(".dot");
-var index = 0;
+var slides = document.querySelectorAll(".slide")
+var dots = document.querySelectorAll(".dot")
+var index = 0
 
-
-function prevSlide(n){
-  index+=n;
-  console.log("prevSlide is called");
-  changeSlide();
+function prevSlide(n) {
+  index += n
+  console.log("prevSlide is called")
+  changeSlide()
 }
 
-function nextSlide(n){
-  index+=n;
-  changeSlide();
+function nextSlide(n) {
+  index += n
+  changeSlide()
 }
 
-changeSlide();
+changeSlide()
 
-function changeSlide(){
+function changeSlide() {
+  if (index > slides.length - 1) index = 0
 
-  if(index>slides.length-1)
-    index=0;
+  if (index < 0) index = slides.length - 1
 
-  if(index<0)
-    index=slides.length-1;
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"
 
+    dots[i].classList.remove("active")
+  }
 
-
-    for(let i=0;i<slides.length;i++){
-      slides[i].style.display = "none";
-
-      dots[i].classList.remove("active");
-
-
-    }
-
-    slides[index].style.display = "block";
-    dots[index].classList.add("active");
-
-
-
+  slides[index].style.display = "block"
+  dots[index].classList.add("active")
 }
