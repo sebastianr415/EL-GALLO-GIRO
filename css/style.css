@@ -253,13 +253,11 @@ a.footer-social:hover {
 .footer1 {
   position: sticky;
   bottom: 0;
-  padding: 25px 0;
+  padding: 30px 0;
   border: 1px solid #ff8008;
   background-color: #ff8008;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
+
 
 .footer-icons {
   gap: 20px;
@@ -311,22 +309,15 @@ a.footer-social:hover {
     font-size: 31px;
   }
 
-  .footer1 {
-    position: sticky;
-    bottom: 0;
-    padding: 30px 0;
-    border: 1px solid #ff8008;
-    background-color: #ff8008;
-    display: flex;
-    justify-content: center;
-    line-height: var(--space-xl);
-  }
-
-  .footer-social a {
+  .footer-social  {
     display: flex;
     justify-content: center;
     text-decoration: none;
     color: var(--text-color);
+  }
+
+  .footer-social a:not(:last-child) {
+    margin-right: 15px;
   }
 }
 
