@@ -1,7 +1,5 @@
-@import url("style.css");
-@import url("base.css");
+@import url("main.css");
 
 .about-section {
-  padding: var(--space-xl);
-    border: 1px solid red;
+  padding: 110px 20px;
 }
