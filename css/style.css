@@ -115,6 +115,11 @@
   padding: 20px 30px;
 }
 
+.story-img {
+  /* visibility: hidden; */
+  display: none;
+}
+
 .article-1 {
   padding: 20px;
 }
@@ -191,7 +196,9 @@ a:hover {
     justify-content: flex-start;
     align-items: center;
   }
-
+  .story-img {
+    display: inline;
+  }
   .story img {
     width: 50%;
   }
