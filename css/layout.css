@@ -3,24 +3,182 @@
 } */
 
 /* image carousel */
-.slide img {
+img {
   width: 100%;
-  padding: 20px;
 }
 
+/* controls */
 #slider {
   width: 100%;
-
-  /* max-width: 600px; */
+  margin: 0 auto;
   position: relative;
   overflow: hidden;
+  box-shadow: 2px 5px 10px rgba(0 0 0 40%);
 }
 
-.slide {
-  width: 100%;
-  animation-name: fade;
-  animation-duration: 1s;
+#dots-con {
+  display: none;
 }
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1em;
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+
+.controls:hover {
+  background: var(--bg-color);
+  transition: 0.3s;
+}
+
+.controls:active {
+  color: var(--hover-color);
+}
+
+#left-arrow {
+  left: 10px;
+}
+
+#right-arrow {
+  right: 10px;
+}
+
+@media (min-width: 43em) {
+  .slide {
+    width: 100%;
+    display: none;
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.5;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    padding: 15px 10px;
+    border-radius: 5px;
+  }
+
+  .controls:hover {
+    background: var(--bg-color);
+    transition: 0.3s;
+  }
+
+  .controls:active {
+    color: var(--hover-color);
+  }
+
+  #left-arrow {
+    left: 10px;
+  }
+
+  #right-arrow {
+    right: 10px;
+  }
+
+  #dots-con {
+    text-align: center;
+  }
+
+  .dot {
+    display: inline-block;
+    background: grey;
+    padding: 8px;
+    border-radius: 50%;
+    margin: 10px 5px;
+  }
+
+  .active {
+    background: var(--bg-color);
+  }
+}
+
+@media (min-width: 62em) {
+  .slide {
+    width: 100%;
+    display: none;
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.5;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    padding: 15px 10px;
+    border-radius: 5px;
+  }
+
+  .controls:hover {
+    background: var(--bg-color);
+    transition: 0.3s;
+  }
+
+  .controls:active {
+    color: var(--hover-color);
+  }
+
+  #left-arrow {
+    left: 10px;
+  }
+
+  #right-arrow {
+    right: 10px;
+  }
+
+  #dots-con {
+    text-align: center;
+  }
+
+  .dot {
+    display: inline-block;
+    background: grey;
+    padding: 8px;
+    border-radius: 50%;
+    margin: 10px 5px;
+  }
+
+  .active {
+    background: var(--bg-color);
+  }
+}
+
+/* end of controls */
 
 /**** Map styles *****/
 .map-responsive {
