@@ -196,9 +196,11 @@ a:hover {
     justify-content: flex-start;
     align-items: center;
   }
+
   .story-img {
     display: inline;
   }
+
   .story img {
     width: 50%;
   }
