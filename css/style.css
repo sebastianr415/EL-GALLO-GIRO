@@ -1,3 +1,4 @@
+/* stylelint-disable prettier/prettier */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -97,7 +98,6 @@
 /******* hamburger menu ends here ********/
 
 .hero-img {
-  /* stylelint-disable-next-line prettier/prettier */
   background:
     linear-gradient(rgb(0 0 0 / 10%), rgb(0 0 0 / 30%)),
     url("/img/close-up-cabeza-pic.jpeg") no-repeat center center fixed;
