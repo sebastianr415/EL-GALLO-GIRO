@@ -111,7 +111,7 @@
 
 .hero-img::before {
   content: "";
-  background-image: url("/img/close-up-cabeza-pic.jpeg");
+  background-image: url("/img/front-truck-pic.jpeg");
   background-size: cover;
   position: absolute;
   top: 0;
@@ -131,7 +131,6 @@
 }
 
 .story-img {
-  /* visibility: hidden; */
   display: none;
 }
 
